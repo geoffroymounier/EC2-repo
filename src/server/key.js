@@ -1,4 +1,4 @@
 module.exports={
-  tokenKey:"SUPERSTRONGKEYFORJWT",
+  tokenKey:process.env.JWT_TOKEN,
   tokenLife: 1200,
 }
