@@ -38,7 +38,6 @@ const ResetPass = () => {
             }
           })
           .catch(err => {
-              console.log(err, URL)
             setSubmitting(false)
             setErrorMessage('Une erreur inconnue vient de se produire')
           });
