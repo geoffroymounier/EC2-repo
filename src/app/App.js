@@ -10,7 +10,6 @@ import {
 } from 'react-router-dom';
 
 export default function App() {
-  console.log('here')
   return (
     <Layout>
       <Router>
