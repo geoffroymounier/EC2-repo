@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom'
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
-const URL = process.env.NODE_ENV == 'production' ? '' : `http://localhost:${process.env.PORT}`;
+const URL = process.env.NODE_ENV == 'production' ? 'api' : `http://localhost:${process.env.PORT}/api`;
 
 const useQuery = () => {
     const json = {}

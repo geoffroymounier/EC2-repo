@@ -62,6 +62,7 @@ app.post('/api/askForReset',(req,res) => {
 
 
 app.post('/api/newPassword',(req,res) => {
+  const {password,userId,token} = req.body
   getResetPasswordToken(userId).then((retrievedToken)=>{
     if (retrievedToken !== token) {
       return res.send({status:412,message:'request has expired, please have a reset email sent again'})

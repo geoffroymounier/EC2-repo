@@ -9,6 +9,11 @@ const dotenv = require('dotenv').config({
 module.exports = merge(common, {
   devtool: 'inline-source-map',
   mode: 'development',
+  devServer: {
+    historyApiFallback: true,
+    inline:true,
+    port: dotenv.parsed.PORT_WEBPACK
+  },
   plugins: [
     new webpack.DefinePlugin({
       'process.env': dotenv.parsed,
